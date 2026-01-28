@@ -1,0 +1,141 @@
+.ic_top_location {
+  background: url(../../../../images/top-location-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.ic_top_location::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--secondary-color);
+  opacity: 0.9;
+  z-index: -1;
+}
+.ic_top_location_item {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.imageWrapper.active {
+  flex: 0 0 40%;
+  z-index: 2;
+}
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 1.6%,
+    rgba(8, 26, 39, 0.8) 78%
+  );
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.imageWrapper:hover .overlay {
+  opacity: 1;
+}
+.ic_overlay_inf {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.ic_overlay_inf button {
+  width: 48px;
+  height: 48px;
+  background: var(--white-color);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.ic_overlay_text {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+@media (max-width: 1399.98px) {
+  .ic_top_location_item {
+    height: 450px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .ic_top_location_item {
+    height: 400px;
+  }
+  .ic_overlay_inf button {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 991.98px) {
+  .ic_top_location_item {
+    height: 350px;
+  }
+}
+@media (max-width: 767.98px) {
+  .ic_top_location_item {
+    height: 300px;
+  }
+  .ic_overlay_inf button {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 575.98px) {
+  .ic_top_location_item {
+    height: 250px;
+  }
+  .ic_overlay_inf button {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 375.98px) {
+  .ic_top_location_item {
+    height: 200px;
+  }
+  .ic_overlay_inf button {
+    width: 25px;
+    height: 25px;
+  }
+}

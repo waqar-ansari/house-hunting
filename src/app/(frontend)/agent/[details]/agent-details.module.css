@@ -1,0 +1,260 @@
+.ic_personal_info_left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ic_personal_info_right {
+    padding-left: 20px;
+}
+
+.ic_title {
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ic_personal_info_contact {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ic_personal_info_contact .ic_info_item {
+    flex: 0 0 auto;
+    width: 40%;
+}
+
+.ic_personal_info_contact .ic_item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.ic_personal_info_contact .ic_item:last-child {
+    margin-bottom: 0px;
+}
+
+.ic_personal_info_contact .ic_item h6 {
+    flex: 0 0 auto;
+    width: 40%;
+}
+
+.ic_personal_info_contact .ic_item p {
+    flex: 1;
+}
+
+.ic_social ul {
+    display: flex;
+    gap: 10px;
+}
+
+.ic_social ul li {
+    list-style-type: none;
+}
+
+.ic_social ul li a {
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E9E9E9;
+    color: #5C727D;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+.ic_social ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: 1px solid var(--primary-color);
+
+}
+
+.ic_biography_info {
+    margin-bottom: 60px;
+}
+
+.ic_biography_info p {
+    margin-bottom: 10px;
+}
+
+.ic_biography_info p:last-child {
+    margin-bottom: 0px;
+}
+
+.ic_agent_service_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.ic_agent_service_item {
+    width: 25%;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s ease;
+    text-align: center;
+    padding: 45px 45px;
+    border: 1px solid transparent;
+}
+
+.ic_agent_service_item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ic_agent_service_item:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.ic_inquiry_left {
+    background-color: #F2F6F7;
+    border-radius: 12px;
+}
+
+.ic_inquery_title {
+    padding: 30px 30px;
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.ic_inquery_form {
+    padding: 30px 30px;
+}
+
+.ic_form_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.ic_form_group label {
+    margin-bottom: 5px;
+}
+
+.ic_form_group input {
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    padding: 0px 14px;
+    background-color: var(--white-color);
+}
+
+.ic_form_group input::placeholder {
+    font-size: 14px;
+}
+
+.ic_form_group textarea {
+    background-color: var(--white-color);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    padding: 14px;
+    height: 130px;
+}
+
+.ic_form_group textarea::placeholder {
+    font-size: 14px;
+}
+
+/**********Responsive**********/
+
+@media only screen and (max-width: 1399.98px) {
+    .ic_personal_info_contact .ic_info_item {
+        width: 45%;
+    }
+
+    .ic_agent_service_item {
+        padding: 35px 35px;
+        width: 27%;
+    }
+
+    .ic_inquery_title {
+        padding: 25px 25px;
+    }
+
+    .ic_inquery_form {
+        padding: 25px 25px;
+    }
+
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .ic_biography_info {
+        margin-bottom: 40px;
+    }
+
+    .ic_personal_info_right {
+        padding-left: 0px;
+    }
+
+    .ic_personal_info_contact .ic_info_item {
+        width: 48%;
+    }
+
+    .ic_personal_info_contact .ic_item h6 {
+        width: 36%;
+    }
+
+    .ic_social ul li a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .ic_agent_service_item {
+        padding: 30px 30px;
+        width: 30%;
+    }
+
+    .ic_form_group input {
+        height: 48px;
+    }
+
+}
+
+@media only screen and (max-width: 991.98px) {
+    .ic_personal_info_left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .ic_title {
+        text-align: center;
+    }
+
+    .ic_agent_service_wrap {
+        gap: 12px;
+    }
+
+    .ic_agent_service_item {
+        padding: 25px 25px;
+        width: 32%;
+    }
+
+    .ic_form_group input {
+        height: 45px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .ic_agent_service_item {
+        padding: 25px 25px;
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .ic_agent_service_item {
+        padding: 25px 25px;
+        width: 100%;
+    }
+
+    .ic_personal_info_contact {
+        flex-wrap: wrap;
+    }
+
+    .ic_personal_info_contact .ic_info_item {
+        width: 100%;
+    }
+}

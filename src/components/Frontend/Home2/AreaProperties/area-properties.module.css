@@ -1,0 +1,75 @@
+.ic_next_prev_btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.ic_next_prev_btn button {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.10);
+    background-color: var(--white-color);
+    transition: all 0.5s ease;
+    color: var(--secondary-color);
+}
+
+.ic_next_prev_btn button svg {
+    font-size: 20px;
+
+}
+
+.ic_next_prev_btn button:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.ic_area_properties_item {
+    box-shadow: 0px 4px 16px 0px #0000000F;
+    border-radius: 12px;
+    background-color: var(--white-color);
+}
+
+.ic_thumbnail img {
+    border-radius: 12px 12px 0px 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+.ic_content {
+    padding: 25px 25px;
+}
+
+.ic_content h5 {
+    margin-bottom: 20px;
+}
+
+/* Testimonial Responsive */
+
+@media only screen and (max-width: 1399.98px) {
+    .ic_next_prev_btn button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .ic_content {
+        padding: 20px 20px;
+    }
+
+    .ic_content h5 {
+        margin-bottom: 16px;
+    }
+
+
+}
+
+@media only screen and (max-width: 575.98px) {
+    .ic_thumbnail img {
+        width: 100%;
+    }
+}

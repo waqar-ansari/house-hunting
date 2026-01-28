@@ -1,0 +1,227 @@
+/* Footer CSS */
+.ic_footer_area {
+    background-color: #171B2A;
+}
+
+.ic_footer_newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0px;
+    border-bottom: 1px solid #4D4D4D;
+}
+
+.ic_newsletter_right {
+    width: 420px;
+    position: relative;
+}
+
+.ic_newsletter_right input {
+    height: 52px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    padding: 0px 20px;
+    padding-right: 135px;
+    border: none;
+    width: 100%;
+
+}
+
+.ic_newsletter_right input::placeholder {
+    font-size: 14px;
+    color: var(--body-color);
+
+}
+
+.ic_newsletter_right button {
+    height: 52px;
+    padding: 0px 20px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-weight: 500;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ic_footer_main {
+    padding: 80px 0px;
+
+}
+
+.ic_footer_social ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ic_footer_social ul li {
+    list-style-type: none;
+}
+
+.ic_footer_social ul li a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    transition: all 0.5s ease;
+}
+
+.ic_footer_social ul li a:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.ic_footer_social ul li a svg {
+    font-size: 14px;
+
+}
+
+.ic_footer_list .ic_title {
+    margin-bottom: 16px;
+}
+
+.ic_footer_list ul li {
+    list-style-type: none;
+}
+
+.ic_footer_list ul li a {
+    color: var(--white-color);
+    transition: all 0.5s ease;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.ic_footer_list ul li a:hover {
+    color: var(--primary-color);
+}
+
+.ic_contact_info .ic_item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.ic_contact_info .ic_item svg {
+    color: var(--primary-color);
+    font-size: 18px;
+    width: 18px;
+}
+
+.ic_contact_info .ic_item span {
+    flex: 1;
+}
+
+.ic_footer_copyright {
+    background-color: #282B38;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+/* Footer Responsive */
+
+@media only screen and (max-width: 1399.98px) {
+    .ic_footer_newsletter {
+        padding: 45px 0px;
+    }
+
+    .ic_footer_main {
+        padding: 70px 0px;
+    }
+
+    .ic_newsletter_right input {
+        height: 50px;
+    }
+
+    .ic_newsletter_right button {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .ic_footer_newsletter {
+        padding: 40px 0px;
+    }
+
+    .ic_footer_main {
+        padding: 60px 0px;
+    }
+
+    .ic_newsletter_right {
+        width: 380px;
+    }
+
+}
+
+@media only screen and (max-width: 991.98px) {
+    .ic_footer_newsletter {
+        padding: 30px 0px;
+    }
+
+    .ic_footer_main {
+        padding: 50px 0px;
+    }
+
+    .ic_footer_about {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .ic_footer_social ul {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .ic_footer_newsletter {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .ic_footer_main {
+        padding-bottom: 30px;
+    }
+
+    .ic_footer_list {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .ic_footer_list ul li a {
+        margin-bottom: 10px;
+    }
+
+    .ic_contact_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ic_contact_info .ic_item {
+        margin-bottom: 10px;
+    }
+
+    .ic_newsletter_right input {
+        height: 48px;
+    }
+
+    .ic_newsletter_right button {
+        height: 48px;
+    }
+
+    .ic_newsletter_right {
+        width: 100%;
+    }
+}

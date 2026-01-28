@@ -1,0 +1,136 @@
+.ic_about_left {
+    position: relative;
+    padding: 0px 0px 20px 20px;
+}
+
+.ic_about_left img {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.ic_about_left .ic_image_bg {
+    background-color: var(--secondary-color);
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    border-radius: 12px;
+    z-index: -1;
+    bottom: 0px;
+    left: 0px;
+}
+
+.ic_about_right {
+    padding-left: 75px;
+}
+
+.ic_list_experience {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.ic_list_experience .ic_list {
+    flex: 1;
+}
+
+.ic_list_experience .ic_list ul {
+    padding-left: 16px;
+}
+
+.ic_list_experience .ic_list li {
+    margin-bottom: 12px;
+}
+
+.ic_list_experience .ic_list li:last-child {
+    margin-bottom: 0px;
+}
+
+.ic_experience {
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 12px;
+    padding: 18px 18px;
+    flex: 0 0 auto;
+    width: 40%;
+}
+
+.ic_experience .ic_content {
+    border-radius: 12px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 25px 30px;
+}
+
+.ic_title_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ic_bottom_title {
+    text-align: center;
+}
+
+.ic_about_counter {
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/**Responsive**/
+
+@media only screen and (max-width: 1399.98px) {
+    .ic_about_right {
+        padding-left: 40px;
+    }
+
+    .ic_experience {
+        padding: 16px 16px;
+    }
+
+    .ic_experience .ic_content {
+        padding: 20px 25px;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .ic_about_right {
+        padding-left: 24px;
+    }
+
+    .ic_experience {
+        padding: 10px 10px;
+        width: 28%;
+    }
+
+    .ic_experience img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ic_experience .ic_content {
+        padding: 12px 12px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .ic_about_right {
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .ic_list_experience {
+        flex-direction: column;
+    }
+
+    .ic_experience {
+        width: 100%;
+    }
+}

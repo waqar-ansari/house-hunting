@@ -1,0 +1,159 @@
+.ic_listing_tab_sort_by {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.listing_tab {
+    display: flex;
+    gap: 30px;
+}
+
+.listing_tab button {
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--title-color);
+    border: none;
+    position: relative;
+}
+
+.listing_tab button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    width: 0%;
+    height: 1px;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateX(-50%);
+}
+
+.listing_tab button.active {
+    color: var(--primary-color);
+}
+
+.listing_tab button.active::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.ic_listing_reset_sort {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ic_list_grid_icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ic_list_grid_icon a {
+    color: #5C727D;
+    font-size: 16px;
+    display: flex;
+
+}
+
+.ic_list_grid_icon .active {
+    color: var(--primary-color);
+}
+
+.ic_listing_reset_sort button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.ic_sort_select {
+    height: 36px !important;
+    border: 1px solid #E9E9E9;
+    border-radius: 4px;
+    width: 110px;
+}
+
+.ic_property_sidebar {
+    box-shadow: 0px 4px 16px 0px #0000000F;
+    border-radius: 12px;
+    padding: 30px 30px;
+}
+
+.ic_property_sidebar ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+
+}
+
+.ic_property_sidebar ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.ic_property_sidebar_item h6 {
+    margin-bottom: 10px;
+}
+
+.ic_property_sidebar_item {
+    padding: 25px 0px;
+    border-bottom: 1px solid #E9E9E9
+}
+
+.ic_property_sidebar_item:first-child {
+    padding-top: 0px;
+
+}
+
+.ic_property_sidebar_item:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1399.98px) {
+    .listing_tab button {
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (max-width: 767.98px) {
+
+    .ic_listing_tab_sort_by {
+        padding-bottom: 10px;
+    }
+
+    .listing_tab {
+        gap: 20px;
+    }
+
+    .listing_tab button {
+        font-size: 18px;
+    }
+
+    .listing_tab button::after {
+        bottom: -17px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+
+
+    .ic_listing_tab_sort_by {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .listing_tab button::after {
+        display: none;
+    }
+}

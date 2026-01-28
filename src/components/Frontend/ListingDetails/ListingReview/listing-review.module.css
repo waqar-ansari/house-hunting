@@ -1,0 +1,156 @@
+.ic_customer_reviews {
+    margin-top: 30px;
+}
+
+.ic_blog_comment {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.ic_blog_comment .ic_avatar {
+    flex: 0 0 auto;
+    width: 76px;
+}
+
+.ic_blog_comment .ic_avatar img {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+}
+
+.ic_blog_comment .ic_content .ic_review_icon {
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.ic_blog_comment .ic_content .ic_review_icon svg {
+    color: #EF8000;
+}
+
+.ic_blog_comment .ic_content h6 {
+    margin-bottom: 5px;
+}
+
+.ic_blog_comment .ic_content button {
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    color: var(--primary-color);
+}
+
+.ic_leave_replay {
+    background-color: var(--background);
+    border-radius: 12px;
+}
+
+.ic_leave_replay .ic_title {
+    padding: 30px 30px;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.ic_reply_form {
+    padding: 30px 30px;
+}
+
+.ic_form_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.ic_form_group label {
+    margin-bottom: 5px;
+}
+
+.ic_form_group input,
+.ic_form_group textarea {
+    height: 45px;
+    padding: 0px 14px;
+    border-radius: 6px;
+    border: 1px solid #E9E9E9;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    background-color: var(--white-color);
+}
+
+.ic_form_group textarea {
+    height: 130px;
+    padding: 14px 14px;
+}
+
+.ic_rating_add {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.ic_rating_star {
+    display: flex;
+    gap: 4px;
+}
+
+.ic_rating_star button {
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: var(--body-color);
+    border: none;
+    transition: all 0.5s;
+}
+
+.ic_rating_star button.active,
+.ic_rating_star button:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/****Responsive ****/
+
+@media only screen and (max-width: 1199.98px) {
+    .ic_blog_comment .ic_avatar {
+        width: 60px;
+    }
+
+    .ic_blog_comment .ic_avatar img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .ic_blog_comment .ic_content h6 {
+        font-size: 14px;
+    }
+
+    .ic_blog_comment .ic_content p {
+        font-size: 14px;
+    }
+
+    .ic_blog_comment .ic_content button {
+        font-size: 12px;
+    }
+
+    .ic_leave_replay .ic_title {
+        padding: 20px 20px;
+    }
+
+    .ic_reply_form {
+        padding: 20px 20px;
+    }
+
+
+
+    .ic_form_group textarea {
+        height: 100px;
+        padding: 12px 12px;
+    }
+
+    .ic_rating_star button {
+        width: 22px;
+        height: 22px;
+        font-size: 12px;
+    }
+}

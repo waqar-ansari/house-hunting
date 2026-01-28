@@ -1,0 +1,226 @@
+.ic_contact_info_item {
+    background-color: var(--background);
+    border-radius: 12px;
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.ic_contact_map iframe {
+    border: 0;
+    height: 650px;
+}
+
+.ic_get_in_touch_wrap {
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+    background-color: var(--white-color);
+    border-radius: 12px;
+    margin-top: -150px;
+    position: relative;
+}
+
+.ic_get_in_touch_wrap .ic_title {
+    padding: 40px 40px;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.ic_get_in_touch_form_info_wrap {
+    padding: 40px 40px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.ic_get_in_touch_form {
+    flex: 0 0 auto;
+    width: 72%;
+    padding-right: 40px;
+}
+
+.ic_get_in_touch_info {
+    flex: 1;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+}
+
+.ic_form_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.ic_form_group label {
+    margin-bottom: 8px;
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.ic_form_group input {
+    height: 50px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    background-color: var(--white-color);
+    padding: 0px 14px;
+    border: 1px solid #E9E9E9;
+
+}
+
+.ic_form_group textarea {
+    height: 140px;
+    padding: 14px 14px;
+    border: 1px solid #E9E9E9;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    background-color: var(--white-color);
+}
+
+.ic_info_item {
+    padding: 20px 30px;
+    border-bottom: 1px solid rgba(188, 188, 188, 0.20);
+
+}
+
+.ic_info_item h5 {
+    margin-bottom: 5px;
+}
+
+.ic_info_item p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ic_info_item p svg {
+    color: var(--primary-color);
+    width: 24px;
+}
+
+.ic_social_share {
+    padding: 20px 30px;
+}
+
+.ic_social_share ul {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ic_social_share ul li {
+    list-style-type: none;
+}
+
+.ic_social_share ul li a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--white-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    transition: all 0.5s;
+}
+
+.ic_social_share ul li a:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+/**Responsive**/
+
+@media only screen and (max-width: 1399.98px) {
+    .ic_contact_info_item {
+        padding: 45px 35px;
+    }
+
+    .ic_contact_map iframe {
+        height: 500px;
+    }
+
+    .ic_get_in_touch_wrap .ic_title {
+        padding: 30px 30px;
+    }
+
+    .ic_get_in_touch_form_info_wrap {
+        padding: 30px 30px;
+    }
+
+    .ic_get_in_touch_form {
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .ic_contact_info_item {
+        padding: 40px 30px;
+    }
+
+    .ic_contact_map iframe {
+        height: 450px;
+    }
+
+    .ic_get_in_touch_form {
+        padding-right: 20px;
+        width: 68%;
+    }
+
+    .ic_get_in_touch_wrap .ic_title {
+        padding: 25px 25px;
+    }
+
+    .ic_get_in_touch_form_info_wrap {
+        padding: 25px 25px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .ic_contact_info_item {
+        padding: 35px 25px;
+    }
+
+    .ic_contact_map iframe {
+        height: 400px;
+    }
+
+    .ic_get_in_touch_wrap .ic_title {
+        padding: 20px 20px;
+    }
+
+    .ic_get_in_touch_form_info_wrap {
+        padding: 20px 20px;
+    }
+
+    .ic_info_item {
+        padding: 15px 20px;
+    }
+
+    .ic_get_in_touch_form {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .ic_get_in_touch_info {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .ic_contact_info_item {
+        padding: 35px 25px;
+    }
+
+    .ic_contact_map iframe {
+        height: 350px;
+    }
+
+    .ic_form_group input {
+        height: 46px;
+    }
+
+    .ic_form_group textarea {
+        height: 120px;
+    }
+
+    .ic_social_share ul {
+        margin-top: 16px;
+    }
+}

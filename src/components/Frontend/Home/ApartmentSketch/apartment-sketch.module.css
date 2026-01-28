@@ -1,0 +1,114 @@
+/* Apartment sketch CSS */
+.ic_apartment_sketch_tab {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ic_apartment_sketch_tab button {
+    background-color: transparent;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.ic_apartment_sketch_tab button.active {
+    color: var(--primary-color);
+}
+
+.ic_info_box {
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    padding: 45px 45px;
+}
+
+.ic_info_box .ic_item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.ic_info_box .ic_item:last-child {
+    margin-bottom: 0px;
+}
+
+.ic_info_box .ic_item .ic_line {
+    border: 1px dashed var(--white-color);
+    flex: 1;
+}
+
+.ic_info_box .ic_item .ic_left_text {
+    flex: 0 0 auto;
+}
+
+.ic_info_box .ic_item .ic_right_text {
+    flex: 0 0 auto;
+    width: 15%;
+}
+
+/* Apartment Sketch Responsive */
+
+@media only screen and (max-width: 1399.98px) {
+    .ic_info_box {
+        padding: 30px 30px;
+    }
+
+    .ic_info_box .ic_item {
+        margin-bottom: 25px;
+    }
+
+    .ic_info_box .ic_item .ic_right_text {
+        width: 16%;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .ic_info_box {
+        padding: 25px 25px;
+    }
+
+    .ic_info_box .ic_item {
+        margin-bottom: 20px;
+    }
+
+    .ic_info_box .ic_item .ic_right_text {
+        width: 21%;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .ic_apartment_sketch_tab {
+        gap: 40px;
+    }
+
+    .ic_sketch_img {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .ic_apartment_sketch_tab {
+        gap: 20px;
+    }
+
+    .ic_info_box .ic_item {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .ic_apartment_sketch_tab {
+        gap: 10px;
+    }
+
+    .ic_info_box .ic_item {
+        margin-bottom: 15px;
+    }
+
+    .ic_info_box .ic_item .ic_right_text {
+        width: 24%;
+    }
+}

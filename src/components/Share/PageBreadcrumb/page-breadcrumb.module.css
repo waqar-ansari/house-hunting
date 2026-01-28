@@ -1,0 +1,115 @@
+.ic_page_breadcrumb_wrap {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 160px 0px;
+    position: relative;
+    margin-bottom: 23px;
+}
+
+.ic_page_breadcrumb_wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(7, 28, 31, 0.72) 36.46%, rgba(0, 0, 0, 0.00) 64.01%);
+}
+
+.ic_breadcrumb_title {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.ic_breadcrumb_nav {
+    height: 46px;
+    padding: 0px 26px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.ic_breadcrumb_nav ul {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ic_breadcrumb_nav ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.ic_breadcrumb_nav ul li:last-child {
+    display: none;
+}
+
+.ic_breadcrumb_nav ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+/**page Breadcrumb Responsive**/
+
+@media only screen and (max-width: 1399.98px) {
+    .ic_page_breadcrumb_wrap {
+        padding: 150px 0px;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .ic_page_breadcrumb_wrap {
+        padding: 130px 0px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .ic_page_breadcrumb_wrap {
+        padding: 110px 0px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .ic_page_breadcrumb_wrap {
+        padding: 80px 0px;
+    }
+
+    .ic_breadcrumb_nav {
+        height: 44px;
+        padding: 0px 22px;
+        bottom: -22px;
+    }
+
+    .ic_form_group textarea {
+        height: 110px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .ic_page_breadcrumb_wrap {
+        padding: 60px 0px;
+    }
+
+    .ic_breadcrumb_nav ul {
+        gap: 5px;
+    }
+
+    .ic_breadcrumb_nav {
+        height: 42px;
+        padding: 0px 15px;
+        bottom: -22px;
+    }
+}

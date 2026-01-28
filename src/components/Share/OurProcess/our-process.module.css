@@ -1,0 +1,32 @@
+/* Process CSS */
+.ic_our_process_wrap {
+    padding: 0px 65px;
+}
+
+.ic_our_process_item {
+    background-color: var(--white-color);
+    border-radius: 12px;
+    text-align: center;
+    padding: 40px 40px;
+}
+
+/* Process Responsive */
+@media only screen and (max-width: 1399.98px) {
+    .ic_our_process_wrap {
+        padding: 0px 40px;
+    }
+
+    .ic_our_process_item {
+        padding: 30px 25px;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .ic_our_process_item {
+        padding: 25px 20px;
+    }
+
+    .ic_our_process_wrap {
+        padding: 0px 0px;
+    }
+}

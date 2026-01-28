@@ -1,0 +1,10 @@
+.ic_chart_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ic_chart_title .ic_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

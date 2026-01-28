@@ -1,0 +1,88 @@
+.ic_auth_modal_body {
+    border-top: 1px solid #E9E9E9;
+    padding: 15px 15px;
+    padding-top: 16px;
+}
+
+.ic_auth_tab {
+    display: flex;
+    align-items: center;
+}
+
+.ic_auth_tab button {
+    background-color: transparent;
+    color: var(--body-color);
+    border: none;
+    padding: 7px 7px;
+    padding-top: 0px;
+    transition: all 0.5s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.ic_auth_tab button:first-child {
+    padding-left: 0px;
+}
+
+.ic_auth_tab button:hover {
+    color: var(--title-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.ic_auth_tab button.active {
+    color: var(--title-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.ic_form_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.ic_form_group label {
+    margin-bottom: 5px;
+}
+
+.ic_form_group input {
+    border: 1px solid #E9E9E9;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0px 16px;
+}
+
+.ic_submit_btn button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.ic_check_forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.ic_check_forgot a:hover {
+    color: var(--primary-color);
+}
+
+/**Responsive**/
+
+@media only screen and (max-width: 767.98px) {
+    .ic_auth_modal_body {
+        padding: 15px 0px;
+    }
+
+    .ic_form_group {
+        margin-bottom: 18px;
+    }
+
+    .ic_form_group input {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .ic_submit_btn button {
+        margin-top: 5px;
+    }
+}

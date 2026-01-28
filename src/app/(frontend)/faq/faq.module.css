@@ -1,0 +1,28 @@
+.ic_faq_tab_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.ic_faq_tab_btn button {
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 18px;
+  border: 1px solid #5c727d;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: all 0.3s;
+  color: var(--body-color);
+}
+
+.ic_faq_tab_btn button:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+.ic_faq_tab_btn button.active {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}

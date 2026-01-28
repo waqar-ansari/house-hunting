@@ -1,0 +1,119 @@
+/* Testimonial CSS */
+.ic_next_prev_btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.ic_next_prev_btn button {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.10);
+    background-color: var(--white-color);
+    transition: all 0.5s ease;
+    color: var(--secondary-color);
+}
+
+.ic_next_prev_btn button svg {
+    font-size: 20px;
+
+}
+
+.ic_next_prev_btn button:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.ic_tes_thumbnail img {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.ic_tes_content {
+    background-color: var(--white-color);
+    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 30px 30px;
+    margin: 30px 30px;
+    margin-top: -125px;
+    position: relative;
+}
+
+.ic_quote {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.ic_quote svg {
+    font-size: 48px;
+    color: rgba(0, 66, 116, 0.30);
+}
+
+.ic_user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.ic_user img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+}
+
+/* Testimonial Responsive */
+
+@media only screen and (max-width: 1399.98px) {
+    .ic_next_prev_btn button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .ic_tes_content {
+        padding: 25px 25px;
+        margin: 25px 25px;
+        margin-top: -110px;
+    }
+
+    .ic_quote {
+        top: 15px;
+        right: 20px;
+    }
+
+    .ic_quote svg {
+        font-size: 45px;
+    }
+
+    .ic_user {
+        gap: 10px;
+    }
+
+    .ic_user img {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .ic_tes_content {
+        padding: 20px 20px;
+        margin: 20px 20px;
+        margin-top: -100px;
+    }
+
+    .ic_quote svg {
+        font-size: 38px;
+    }
+
+}

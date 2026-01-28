@@ -1,0 +1,158 @@
+/* Property Item CSS */
+.ic_property_item {
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  background-color: var(--white-color);
+}
+
+.ic_property_item:hover .ic_property_thumbnail img {
+  transform: scale(1.1);
+}
+
+.ic_property_top {
+  position: relative;
+}
+
+.ic_property_thumbnail {
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.ic_property_thumbnail img {
+  border-radius: 12px 12px 0 0;
+  transition: all 0.5s ease;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.ic_property_type_author {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.ic_property_type {
+  height: 30px;
+  padding: 0px 18px;
+  background-color: var(--primary-color);
+  border-radius: 100px;
+  color: var(--white-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.ic_property_type_author img {
+  border-radius: 50%;
+  border: 1px solid #fdfdfd;
+}
+
+.ic_property_info {
+  padding: 25px 25px;
+  position: relative;
+}
+
+.ic_property_favorite {
+  position: absolute;
+  top: -20px;
+  right: 25px;
+  z-index: 1;
+}
+
+.ic_property_favorite button {
+  width: 30px;
+  height: 30px;
+  background-color: var(--white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.ic_property_favorite button svg {
+  color: rgba(92, 114, 125, 1);
+}
+
+.ic_price_title {
+  padding-bottom: 16px;
+}
+
+.ic_price_title h6 {
+  margin-bottom: 8px;
+}
+
+.ic_price_title h5 {
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ic_info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ic_location p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.ic_location svg {
+  color: var(--secondary-color);
+  width: 16px;
+}
+
+/* Property Item Responsive */
+
+@media only screen and (max-width: 1399.98px) {
+  .ic_property_info {
+    padding: 20px 20px;
+  }
+
+  .ic_price_title {
+    padding-bottom: 12px;
+  }
+
+  .ic_price_title h6 {
+    margin-bottom: 5px;
+  }
+
+  .ic_price_title h5 {
+    margin-bottom: 4px;
+  }
+
+  .ic_info {
+    padding-bottom: 12px;
+  }
+
+  .ic_location p {
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .ic_price_title {
+    padding-bottom: 10px;
+  }
+
+  .ic_property_type_author {
+    top: 16px;
+    padding: 0px 16px;
+  }
+}

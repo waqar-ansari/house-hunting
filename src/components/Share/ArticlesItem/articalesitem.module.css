@@ -1,0 +1,77 @@
+/* Blog Item CSS */
+
+.ic_blog_item {
+  background-color: var(--white-color);
+  border-radius: 12px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.ic_blog_item:hover .ic_thumbnail img {
+  transform: scale(1.1);
+}
+
+.ic_thumbnail {
+  overflow: hidden;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.ic_thumbnail img {
+  border-radius: 12px 12px 0px 0px;
+  transition: all 0.5s ease;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.ic_content {
+  padding: 25px 25px;
+}
+
+.ic_content h5 a {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+
+.ic_content a:hover {
+  color: var(--primary-color);
+}
+
+.ic_author_date {
+  display: flex;
+  gap: 20px;
+}
+
+.ic_author_date p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ic_author_date p svg {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+.ic_read_more_btn {
+  background: transparent;
+  color: var(--primary-color);
+  border: none;
+  display: inline-flex;
+  gap: 5px;
+}
+.ic_read_more_btn:hover {
+  border: none;
+}
+.ic_articles_header {
+  border-bottom: 1px solid #d9dcde;
+}
+
+/* Blog Item Responsive */
+
+@media only screen and (max-width: 1399.98px) {
+  .ic_content {
+    padding: 20px 20px;
+  }
+}

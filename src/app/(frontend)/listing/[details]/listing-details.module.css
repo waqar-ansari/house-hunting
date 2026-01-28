@@ -1,0 +1,73 @@
+.ic_listing_right {
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+    background-color: var(--white-color);
+    border-radius: 12px;
+    border: 1px solid #E9E9E9;
+    padding: 30px 25px;
+}
+
+.ic_owner_profile_social_info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ic_profile_img {
+    flex: 0 0 auto;
+    width: 100px;
+}
+
+.ic_profile_img img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.ic_social_info ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ic_social_info ul li {
+    list-style-type: none;
+}
+
+.ic_social_info ul li a {
+    color: var(--body-color);
+}
+
+.ic_latest_listing {
+    padding-top: 20px;
+    border-top: 1px solid #E9E9E9;
+    margin-top: 20px;
+
+}
+
+.ic_latest_listing_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.ic_latest_listing_item:last-child {
+    margin-bottom: 0px;
+}
+
+.ic_latest_listing_thumb {
+    flex: 0 0 auto;
+    width: 100px;
+}
+
+.ic_latest_listing_thumb img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.ic_latest_listing_content p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,147 @@
+.banner_area {
+    background: #F1F6F7;
+    position: relative;
+}
+
+.banner_img {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    top: 0;
+    height: 100%;
+}
+
+.banner_img img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner_content {
+    padding: 105px 0px 265px 0px;
+}
+
+.banner_content .sub_title {
+    margin-bottom: 20px;
+}
+
+.banner_content .title {
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.banner_btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.banner_btn a:last-child {
+    background-color: transparent;
+    border: none;
+    color: var(--title-color);
+}
+
+.banner_btn a:last-child:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.ic_banner_info {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.search_wrap {
+    position: absolute;
+    width: 80%;
+    bottom: -70px;
+    left: 0;
+    z-index: 99;
+}
+
+/**Responsive**/
+
+@media only screen and (max-width: 1399.98px) {
+    .banner_content {
+        padding: 185px 0px 245px 0px;
+    }
+
+    .banner_content .sub_title {
+        margin-bottom: 16px;
+    }
+
+    .banner_content .title {
+        margin-bottom: 20px;
+
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .banner_content .sub_title {
+        margin-bottom: 12px;
+    }
+
+    .banner_content .title {
+        margin-bottom: 16px;
+
+    }
+
+    .banner_content {
+        padding: 165px 0px 225px 0px;
+    }
+
+    .ic_banner_info {
+        gap: 40px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 991.98px) {
+    .banner_content {
+        padding: 80px 0px 40px 0px;
+    }
+
+    .banner_content .sub_title {
+        margin-bottom: 10px;
+    }
+
+    .banner_content .title {
+        margin-bottom: 12px;
+
+    }
+
+    .search_wrap {
+        width: 100%;
+        position: static;
+        padding-bottom: 40px;
+    }
+
+    .banner_img {
+        display: none;
+    }
+
+    .ic_banner_info {
+        gap: 20px;
+    }
+
+    .banner_btn {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .banner_content {
+        padding: 60px 0px 40px 0px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .ic_banner_info {
+        gap: 10px;
+    }
+}

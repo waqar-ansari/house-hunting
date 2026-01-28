@@ -1,0 +1,27 @@
+.ic_faq_right {
+    padding-left: 40px;
+}
+
+.ic_faq_right img {
+    border-radius: 12px;
+}
+
+/**Responsive**/
+
+@media only screen and (max-width: 1399.98px) {
+    .ic_faq_right {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .ic_faq_right {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .ic_faq_right {
+        padding-top: 20px;
+    }
+}

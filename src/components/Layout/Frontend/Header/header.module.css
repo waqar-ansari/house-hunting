@@ -1,0 +1,233 @@
+.ic_header_wrapper {
+  padding: 14px 0px;
+}
+
+.ic_header1_wrapper {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.ic_header2_wrapper {
+  background-color: var(--white-color);
+}
+
+.ic_header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ic_navbar_nav {
+  display: flex;
+  align-items: center;
+}
+
+.ic_nav_item {
+  list-style-type: none;
+  position: relative;
+}
+
+.ic_nav_item:hover .ic_dropdown_menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ic_nav_link {
+  font-size: 16px;
+  line-height: normal;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: var(--white-color);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ic_dropdown_menu {
+  box-shadow: 2px 20px 40px 0px #191e2b33;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  min-width: 240px;
+  padding: 20px 0px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--white-color);
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.ic_dropdown_menu li {
+  list-style-type: none;
+}
+
+.ic_dropdown_menu li a {
+  padding: 5px 20px;
+  display: block;
+  color: var(--title-color);
+  transition: all 0.3s ease;
+}
+
+.ic_dropdown_menu li:first-child a {
+  padding-top: 0px;
+}
+
+.ic_dropdown_menu li:last-child a {
+  padding-bottom: 0px;
+}
+
+.ic_dropdown_menu li a:hover {
+  color: var(--primary-color);
+}
+
+.ic_header2_wrapper .ic_nav_link {
+  color: var(--title-color);
+}
+
+.ic_header2_wrapper .ic_nav_link_btn {
+  color: var(--white-color);
+}
+
+.ic_nav_link:hover {
+  color: var(--primary-color);
+}
+
+.ic_nav_link.active {
+  color: var(--primary-color);
+}
+
+.ic_mobile_logo_close {
+  display: none;
+}
+
+.ic_mobile_menu_open {
+  display: none;
+}
+
+/**Responsive**/
+
+@media only screen and (max-width: 1199.98px) {
+  .ic_nav_link {
+    padding: 14px 16px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .ic_mobile_menu_overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(30, 34, 40, 0.7);
+    top: 0;
+  }
+  .ic_header2_wrapper .ic_nav_link_btn {
+    text-align: center;
+  }
+  .ic_mobile_menu_overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ic_navbar_nav {
+    display: block;
+  }
+
+  .ic_mobile_logo_close {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .ic_menu_close {
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--primary-color);
+    border: none;
+    display: flex;
+  }
+
+  .ic_navbar_nav {
+    padding: 20px 24px;
+  }
+
+  .ic_header_menu {
+    position: fixed;
+    background: var(--white-color);
+    z-index: 9999;
+    top: 0;
+    height: 100vh;
+    transition: all 0.5s;
+    left: 0;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    min-width: 320px;
+    animation: unset !important;
+  }
+
+  .ic_header_menu.open {
+    transform: translateX(0%);
+  }
+
+  .ic_nav_link {
+    display: block;
+    color: var(--title-color);
+    padding: 12px 0px;
+    width: 100%;
+  }
+
+  .ic_navbar_nav .ic_nav_item:first-child .ic_nav_link {
+    padding-top: 0px;
+  }
+
+  .ic_navbar_nav .ic_nav_item:last-child {
+    padding-top: 12px;
+  }
+
+  .ic_dropdown_menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    padding: 0px 0px;
+    display: none;
+  }
+
+  .ic_dropdown_menu.active {
+    display: block;
+  }
+
+  .ic_dropdown_menu li a {
+    padding: 5px 12px;
+  }
+
+  .ic_mobile_menu_open {
+    display: flex;
+    align-items: center;
+  }
+
+  .ic_mobile_menu_open button {
+    background-color: transparent;
+    border: none;
+    color: var(--white-color);
+  }
+
+  .ic_header2_wrapper .ic_mobile_menu_open button {
+    color: var(--primary-color);
+  }
+
+  .ic_mobile_menu_open button svg {
+    font-size: 20px;
+  }
+}
